@@ -151,6 +151,7 @@ GEM
     nokogiri (1.15.3-x86_64-linux)
       racc (~> 1.4)
     orm_adapter (0.5.0)
+    pg (1.5.4)
     public_suffix (5.0.3)
     puma (5.6.6)
       nio4r (~> 2.0)
@@ -220,7 +221,6 @@ GEM
       rspec-mocks (~> 3.12)
       rspec-support (~> 3.12)
     rspec-support (3.12.1)
-    sqlite3 (1.6.3-x86_64-linux)
     thor (1.2.2)
     timeout (0.4.0)
     tzinfo (2.0.6)
@@ -256,6 +256,7 @@ DEPENDENCIES
   factory_bot_rails
   jsonapi-serializer
   jwt (~> 2.7)
+  pg
   puma (~> 5.0)
   pundit
   rack-cors
@@ -263,7 +264,6 @@ DEPENDENCIES
   redis (~> 4.0)
   rest-client
   rspec-rails
-  sqlite3 (~> 1.4)
   tzinfo-data
   vcr
   webmock
