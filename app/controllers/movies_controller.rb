@@ -1,11 +1,11 @@
 class MoviesController < ApplicationController
+    
     before_action :authenticate_user!
 
-    # after_action :notify_user
+  
 
 
     def create
-
         if Movie.find_by(movie_name: params[:movie_name])
             @movie = Movie.find_by(movie_name: params[:movie_name])
             current_user.movies << @movie 
@@ -23,7 +23,7 @@ class MoviesController < ApplicationController
     end 
 
     def index 
-        render json: Movie.pluck("movie_name")
+        render json: current_user.movies.pluck("movie_name")
     end
 
 

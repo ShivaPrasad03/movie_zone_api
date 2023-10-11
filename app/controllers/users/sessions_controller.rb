@@ -2,6 +2,7 @@
 
 class Users::SessionsController < Devise::SessionsController
   include RackSessionsFix
+  
   respond_to :json
 
 
@@ -26,7 +27,7 @@ class Users::SessionsController < Devise::SessionsController
     else
       render json: {
         status: 401,
-        message: "Couldn't find an active session."
+        message: "Couldn find an active session."
       }, status: :unauthorized
     end
   end

@@ -1,0 +1,59 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://randomuser.me/api/
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.2.2p53
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - randomuser.me
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 10 Oct 2023 09:06:08 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - no-cache
+      Etag:
+      - W/"495-sL9BwCsrBYcuorlcp0zJTMoYVpE"
+      Vary:
+      - Accept-Encoding
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=rsqzEA2lhf3YGwMzDPcvV1GJTRA3q%2FPat3JZI1KzbcCSeoERk75XM9%2F8pf4WUAadxqN3ZK2QV0BrfVSj1yR3tdGJBBp90BptojiYdSCbkuwqtr0E8vja394gVhQGCUe4"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 813db4a3ee592e9f-HYD
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '{"results":[{"gender":"female","name":{"title":"Madame","first":"Sigrid","last":"Dupuis"},"location":{"street":{"number":3785,"name":"Rue
+        du Cardinal-Gerlier"},"city":"Grellingen","state":"Obwalden","country":"Switzerland","postcode":6905,"coordinates":{"latitude":"-57.9509","longitude":"21.8755"},"timezone":{"offset":"-2:00","description":"Mid-Atlantic"}},"email":"sigrid.dupuis@example.com","login":{"uuid":"e4d56c59-8196-432d-9b1b-f2af89a3ff2f","username":"sadzebra254","password":"airport","salt":"eMBnk2JQ","md5":"5f994f09f6e70bd54dda8fe483c7421b","sha1":"add0935ef413dd40b3e2d0d62217f45fb9aaf034","sha256":"6e0a05aa3112ac21f4c3c99046e63c97dfeb47ed24883ca4f8991ddcc07b0f1f"},"dob":{"date":"1983-08-10T23:23:17.452Z","age":40},"registered":{"date":"2021-03-06T13:40:16.160Z","age":2},"phone":"075
+        991 92 02","cell":"078 383 40 10","id":{"name":"AVS","value":"756.4281.9127.42"},"picture":{"large":"https://randomuser.me/api/portraits/women/48.jpg","medium":"https://randomuser.me/api/portraits/med/women/48.jpg","thumbnail":"https://randomuser.me/api/portraits/thumb/women/48.jpg"},"nat":"CH"}],"info":{"seed":"63aef341a894daee","results":1,"page":1,"version":"1.4"}}'
+  recorded_at: Tue, 10 Oct 2023 09:06:08 GMT
+recorded_with: VCR 6.2.0

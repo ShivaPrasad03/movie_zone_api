@@ -1,0 +1,55 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://shibe.online/api/shibes?count=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (linux x86_64) ruby/3.2.2p53
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - shibe.online
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 06 Oct 2023 04:48:05 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '791'
+      Connection:
+      - keep-alive
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - DNT,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,Range
+      Access-Control-Max-Age:
+      - '1728000'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=XJAXT%2BI0nVDMSjEpaz5bp5Xj1XZkaPoCvbIZOSATS41sWWF7kV68IAT6HoOVrLL9n%2BBhrtu%2FIwp%2FfA718HunrMJl6MBgUAm7J7r36DunU6fhFFI37Plut20jN%2BKNfxU%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 811b4523fa872e8a-HYD
+      Alt-Svc:
+      - h3=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: '["https://cdn.shibe.online/shibes/50524f8d5cf35ee8878a31875dd39761bbab27fe.jpg","https://cdn.shibe.online/shibes/358ae06ccf7181a4e70169051744e0b927fc0536.jpg","https://cdn.shibe.online/shibes/c5f714412539ecc9fb1ad4b6daf236f8103c8180.jpg","https://cdn.shibe.online/shibes/4aae526084d1b03726cdd12b9632c1fe8a224c11.jpg","https://cdn.shibe.online/shibes/ac796e50526e64594152623861f86984d8071c0d.jpg","https://cdn.shibe.online/shibes/db288c6159d9622965b559387df058e7d4962b72.jpg","https://cdn.shibe.online/shibes/18eabbde294899aa5b60acc2cb581a5b228ce09f.jpg","https://cdn.shibe.online/shibes/053909bf7b0ae6a6c2957633ba3404527e6a5152.jpg","https://cdn.shibe.online/shibes/8523483308f379de60bd79cb861b46b7a754e031.jpg","https://cdn.shibe.online/shibes/a6118d1d8e608854fbea63b3c7cc47b4db7361b6.jpg"]'
+  recorded_at: Fri, 06 Oct 2023 04:48:05 GMT
+recorded_with: VCR 6.2.0
