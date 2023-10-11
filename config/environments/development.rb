@@ -78,7 +78,11 @@ Rails.application.configure do
   #   authentication: 'plain',
   #   enable_starttls_auto: true
   # }
+<<<<<<< HEAD
 config.action_mailer.delivery_method = :smtp
+=======
+# config.action_mailer.delivery_method = :smtp
+>>>>>>> 999b048b5eaf24b8cd1eb9a6ddae8ba8ac9a93a2
 config.action_mailer.smtp_settings = {
   :user_name => '2aa7325cdb732e',
   :password => '23a04b1bc9bba5',
@@ -87,5 +91,8 @@ config.action_mailer.smtp_settings = {
   :port => '2525',
   :authentication => :cram_md5
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 999b048b5eaf24b8cd1eb9a6ddae8ba8ac9a93a2
 end
